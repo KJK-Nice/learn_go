@@ -6,6 +6,8 @@ func main() {
     var i interface{} = "hello"
 
 
+    // Type assertion provides access to
+    // an interface value's underlying concrete value.
     s := i.(string)
     fmt.Println(s)
 
@@ -18,3 +20,4 @@ func main() {
     f = i.(float64) // panic
     fmt.Println(f)
 }
+
