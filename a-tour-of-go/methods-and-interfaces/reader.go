@@ -13,6 +13,7 @@ func main() {
     for {
         n, err := r.Read(b)
         fmt.Printf("n = %v err = %v b = %v\n", n, err, b)
+        // b[:n] is a slice of b from the beginning to the n-th element
         fmt.Printf("b[:n] = %q\n", b[:n])
         if err == io.EOF {
             break
